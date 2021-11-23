@@ -1,0 +1,112 @@
+<%- include('../../layout/ENG/head') %>
+
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/sobre.css">
+
+    <title>Portfolio |
+        <%= title %>
+    </title>
+
+    </head>
+
+    <body>
+        <header>
+            <section>
+                <div>
+                    <a href="/sobre">
+                        <div class="idioma-br">
+                            <img src="/img/svg/brazil.svg" alt="Brazil Flag">
+                            <small>BRA</small>
+                        </div>
+                    </a>
+                    <span class="barra"></span>
+                    <a href="/about">
+                        <div class="idioma-eng">
+                            <img src="/img/svg/united_states.svg" alt="America flag">
+                            <small class="selected">ENG</small>
+                        </div>
+                    </a>
+                </div>
+                <nav>
+                    <li><a class="nav-item" href="/home">Home</a></li>
+                    <li><a class="nav-item selected" href="/about">About</a></li>
+                    <li><a class="nav-item" href="/contact">Contact</a></li>
+                </nav>
+            </section>
+        </header>
+
+        <main>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=5554991967411"><img src="/img/svg/whatsapp.svg" class="whatsapp-btn" alt="Logo whatsapp"></a>
+            <a class="btn-up" href="#"><i class="fas fa-arrow-up"></i></a>
+            <div>
+                <h2>About Me</h2>
+                <span class="linha"></span>
+                <p>A little about me and what I do</p>
+            </div>
+
+            <section>
+                <img src="/img/png/foto_sobre.png" alt="Foto de Perfil pessoal">
+
+                <div>
+                    <h4>My name is Demian...</h4>
+
+                    <p>I'm 21 years old and I currently work as a freelance developer. For almost a year, I've been improving my JavaScript skills to become a Full-Stack JavaScript developer.</p>
+
+                    <p>In this evolution period, I already have developed front and back-end projects, those are still in constant improvement as I acquire new skills. Among them, there are applications that receive and process sensitive user data and have
+                        authorization and authentication systems, in addition to projects that are connected to a database system.
+                    </p>
+
+                    <p>I see myself as a self-taught person. I always like to learn new technologies to apply to my projects. Dedicated and hardworking, JavaScript is for me an excellent tool in the market, both because of its practicality and his scope
+                        in the web world.</p>
+                </div>
+            </section>
+
+            <section class="habilidades">
+                <h2>Technical Skills</h2>
+                <span class="linha"></span>
+                <div class="habilidades-container">
+                    <h5>HTML & CSS</h5>
+                    <div class="progress">
+                        <div style="width:90%"></div>
+                    </div>
+                    <h5>JavaScript</h5>
+                    <div class="progress">
+                        <div style="width:95%"></div>
+                    </div>
+                    <h5>ES6</h5>
+                    <div class="progress">
+                        <div style="width:85%"></div>
+                    </div>
+                    <h5>React</h5>
+                    <div class="progress">
+                        <div style="width:78%"></div>
+                    </div>
+                    <h5>NodeJS & NPM</h5>
+                    <div class="progress">
+                        <div style="width:85%"></div>
+                    </div>
+                    <h5>RestFul API's</h5>
+                    <div class="progress">
+                        <div style="width:75%"></div>
+                    </div>
+                    <h5>Express</h5>
+                    <div class="progress">
+                        <div style="width:83%"></div>
+                    </div>
+                    <h5>MongoDB</h5>
+                    <div class="progress">
+                        <div style="width:78%"></div>
+                    </div>
+                    <h5>Sass</h5>
+                    <div class="progress">
+                        <div style="width:70%"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="/js/app.js"></script>
+        <%- include('../../layout/ENG/footer') %>
+
+    </body>
+
+    </html>

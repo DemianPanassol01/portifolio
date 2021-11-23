@@ -1,0 +1,81 @@
+<%- include('../../layout/PT-BR/head') %>
+
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/contato.css">
+
+    <title>Portfólio |
+        <%= title %>
+    </title>
+
+    </head>
+
+    <body>
+        <header>
+            <section>
+                <div>
+                    <a href="/contato">
+                        <div class="idioma-br">
+                            <img src="/img/svg/brazil.svg" alt="Bandeira do Brasil">
+                            <small class="selected">BRA</small>
+                        </div>
+                    </a>
+                    <span class="barra"></span>
+                    <a href="/contact">
+                        <div class="idioma-eng">
+                            <img src="/img/svg/united_states.svg" alt="Bandeira dos Estados Unidos">
+                            <small>ENG</small>
+                        </div>
+                    </a>
+                </div>
+                <nav>
+                    <li><a class="nav-item" href="/inicio">Início</a></li>
+                    <li><a class="nav-item" href="/sobre">Sobre</a></li>
+                    <li><a class="nav-item selected" href="/contato">Contato</a></li>
+                </nav>
+            </section>
+        </header>
+
+        <main>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=5554991967411"><img src="/img/svg/whatsapp.svg" class="whatsapp-btn" alt="Logo whatsapp"></a>
+            <a class="btn-up" href="#"><i class="fas fa-arrow-up"></i></a>
+            <%- include('../../layout/flash') %>
+                <div>
+                    <h2>Entre em Contato</h2>
+                    <span class="linha"></span>
+                    <p>Envie uma mensagem para mim por aqui</p>
+                </div>
+
+                <form action="/contato" method="POST">
+                    <input type="text" name="name" placeholder="Nome" id="name" autocomplete="name">
+                    <input type="email" name="email" placeholder="Email" id="email" autocomplete="email">
+                    <input type="tel" name="phone" placeholder="Telefone" id="phone" autocomplete="tel">
+                    <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+                    <small id="alert-info">Informações de contato não pode ser deixadas em branco.</small>
+                    <small id="alert-msg">Insira sua mensagem.</small>
+                    <button class="btn btn-send" type="submit">Enviar Mensagem</button>
+                </form>
+
+                <section>
+                    <div>
+                        <i class="fas fa-3x fa-phone"></i>
+                        <h4>Telefone</h4>
+                        <a href="tel:+5554991967411">
+                            <h5>+55 54 991967411</h5>
+                        </a>
+                    </div>
+                    <div>
+                        <i class="fas fa-3x fa-envelope"></i>
+                        <h4>Email</h4>
+                        <a href="mailto:demianpanassol01@gmail.com">
+                            <h5>demianpanassol01@gmail.com</h5>
+                        </a>
+                    </div>
+                </section>
+
+        </main>
+        <script src="/js/app.js"></script>
+        <%- include('../../layout/PT-BR/footer') %>
+
+    </body>
+
+    </html>

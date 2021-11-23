@@ -1,0 +1,35 @@
+<%- include('../layout/PT-BR/head') %>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/error.css">
+
+    <title>Error |
+        <%= statusCode %>
+    </title>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <% if (statusCode === 401) { %>
+                <img src="/img/png/erro401.jpg" alt="Erro 401">
+                <% } else { %>
+                    <img src="/img/png/not-found.png" alt="Imagem Lupa">
+                    <% } %>
+                        <h3><b><%= statusCode %></b></h3>
+                        <h5>
+                            <%= message %>
+                        </h5>
+                        <% if (statusCode !== 401) {%>
+                            <a href="/">Voltar | Go back</a>
+                            <% } %>
+
+                                <% if (statusCode === 401) { %>
+                                    <p>Sua conexão foi encerrada por ser considerada insegura.</p>
+                                    <p>(Your connection was terminated as it was considered unsafe)</p>
+                                    <% } %>
+        </div>
+
+
+    </body>
+
+    </html>

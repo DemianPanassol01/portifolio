@@ -1,0 +1,23 @@
+{
+    "name": "app",
+    "version": "1.0.0",
+    "description": "Projeto Portifólio",
+    "main": "server.js",
+    "scripts": {
+        "sass": "node-sass -w scss/ -o public/css/ --recursive"
+    },
+    "author": "Demian Panassol",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "connect-flash": "^0.1.1",
+        "cookie-session": "^1.4.0",
+        "dotenv": "^10.0.0",
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "helmet": "^4.6.0",
+        "node-sass": "^5.0.0",
+        "nodemailer": "^6.7.0",
+        "nodemon": "^2.0.15"
+    }
+}
