@@ -51,7 +51,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.set('views', path.join(__dirname, '/views'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// app.use(requireHTTPS);
+app.use(requireHTTPS);
 
 app.get('/', (req, res) => {
     res.redirect('/inicio');
