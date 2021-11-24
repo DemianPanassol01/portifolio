@@ -1,8 +1,6 @@
-const Errors = require('./Errors');
-
 module.exports.requireHTTPS = (req, res, next) => {
-    if (!req.secure || req.protocol !== 'https') {
-        return next(new Errors('Conexão Insegura | Connection Unsafe', 401))
+    if (!req.secure) {
+        return res.redirect('https://' + req.headers.host + req.url);
     }
-    next();
+    next()
 };
