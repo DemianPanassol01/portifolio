@@ -12,7 +12,6 @@ const inicioRouter = require('./routes/inicio.req');
 const sobreRouter = require('./routes/sobre.req');
 const contatoRouter = require('./routes/contato.req');
 const Errors = require('./admin/Errors');
-const { requireHTTPS } = require('./admin/middlewares');
 
 app.use(
     helmet({
@@ -48,7 +47,6 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.set('views', path.join(__dirname, '/views'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(requireHTTPS);
 
 app.get('/', (req, res) => {
     res.redirect('/inicio');
