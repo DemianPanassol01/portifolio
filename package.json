@@ -4,7 +4,7 @@
     "description": "Projeto Portifólio",
     "main": "server.js",
     "scripts": {
-        "sass": "node-sass -w scss/ -o public/css/ --recursive"
+        "sass": "sass --no-source-map --watch scss/:public/css/"
     },
     "author": "Demian Panassol",
     "license": "ISC",

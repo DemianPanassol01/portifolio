@@ -1,86 +1,114 @@
 main {
-  width: 100%; }
-  main .msg-conf {
-    margin: 1rem 1rem 0;
-    padding: .5rem 1rem;
-    background-color: #45D65D;
-    color: #ffffff; }
-  main > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    main > div h2 {
-      margin-top: 2.5rem;
-      font-weight: 500; }
-    main > div p {
-      margin-top: 1rem;
-      width: 75%;
-      text-align: center; }
-  main form {
-    padding: 0 1rem;
-    width: auto;
-    margin-top: 2rem; }
-    main form #alert-info,
-    main form #alert-msg {
-      display: none;
-      color: #dc3545; }
-    main form input {
-      width: 100%;
-      padding: 16px 0 16px 24px;
-      border: 1.5px solid #212121;
-      box-sizing: border-box;
-      margin-bottom: 1.5rem; }
-    main form textarea {
-      width: 100%;
-      height: 150px;
-      padding: 16px 0 0 24px;
-      box-sizing: border-box; }
-    main form .btn-send {
-      display: block;
-      margin: 2.5rem 0 0 auto;
-      background-color: #252526;
-      cursor: pointer; }
-      main form .btn-send:hover {
-        color: #e5c365; }
-  main section {
-    background-color: #e5c365;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 2.5rem 0 3rem;
-    margin-top: 4rem; }
-    main section div {
-      margin-bottom: 2rem; }
-      main section div:last-child {
-        margin-bottom: 0; }
-      main section div h4 {
-        margin: .5rem 0 1rem; }
-      main section div a {
-        color: #212121; }
+  width: 100%;
+}
+main .msg-conf {
+  margin: 1rem 1rem 0;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+}
+main .msg-conf-success {
+  background-color: #45D65D;
+}
+main .msg-conf-error {
+  background-color: #dc3545;
+}
+main > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main > div h2 {
+  margin-top: 2.5rem;
+  font-weight: 500;
+}
+main > div p {
+  margin-top: 1rem;
+  width: 75%;
+  text-align: center;
+}
+main form {
+  padding: 0 1rem;
+  width: auto;
+  margin-top: 2rem;
+}
+main form #alert-info,
+main form #alert-msg {
+  display: none;
+  color: #dc3545;
+}
+main form input {
+  width: 100%;
+  padding: 16px 0 16px 24px;
+  border: 1.5px solid #212121;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+}
+main form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 16px 0 0 24px;
+  box-sizing: border-box;
+}
+main form .btn-send {
+  display: block;
+  margin: 2.5rem 0 0 auto;
+  background-color: #252526;
+  cursor: pointer;
+}
+main form .btn-send:hover {
+  color: #e5c365;
+}
+main section {
+  background-color: #e5c365;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 0 3rem;
+  margin-top: 4rem;
+}
+main section div {
+  margin-bottom: 2rem;
+}
+main section div:last-child {
+  margin-bottom: 0;
+}
+main section div h4 {
+  margin: 0.5rem 0 1rem;
+}
+main section div a {
+  color: #212121;
+}
 
 @media (min-width: 600px) {
   main form {
     width: 583px;
-    margin-top: 4rem; }
-    main form input {
-      width: 461px; }
+    margin-top: 4rem;
+  }
+  main form input {
+    width: 461px;
+  }
   main section {
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: flex-start; } }
-
+    align-items: flex-start;
+  }
+}
 @media (min-width: 1200px) {
   main form {
     width: 690px;
-    margin-top: 90px; }
-    main form input {
-      width: 486px; }
+    margin-top: 90px;
+  }
+  main form input {
+    width: 486px;
+  }
   main section {
     position: relative;
-    left: calc(((100vw - 1200px) / 2) * -1);
+    left: calc((100vw - 1200px) / 2 * -1);
     width: 100vw;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: flex-start; } }
+    align-items: flex-start;
+  }
+}

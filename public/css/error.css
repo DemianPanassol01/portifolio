@@ -2,20 +2,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5rem; }
-  .container img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 1.5rem; }
-  .container h3 {
-    margin-bottom: 1rem;
-    color: #212121; }
-  .container h5 {
-    text-align: center;
-    color: #212121;
-    max-width: 600px;
-    margin-bottom: 2.5rem; }
-  .container a {
-    color: #212121; }
-    .container a:hover {
-      color: #e5c365; }
+  margin-top: 5rem;
+}
+.container img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1.5rem;
+}
+.container h3 {
+  margin-bottom: 1rem;
+  color: #212121;
+}
+.container h5 {
+  text-align: center;
+  color: #212121;
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+}
+.container a {
+  color: #212121;
+}
+.container a:hover {
+  color: #e5c365;
+}
